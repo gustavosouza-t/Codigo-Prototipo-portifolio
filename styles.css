@@ -20,11 +20,14 @@ html {
 
 }
 
-body {
+/* --- corpo do portifólio --- */
+
+body { 
     background-color: var(--escuro);
     color: var(--claro) ;
 }
 
+/* --- menu de navegação --- */
 .navegacao {
     position: fixed;
     top: 0;
@@ -64,7 +67,7 @@ body {
     width: 100%;
 }
 
-
+/* --- Cabeçalho --- */
 .cabecalho{
     min-height: 100vh;
     display: flex;
@@ -97,7 +100,7 @@ body {
 
 }
 
-
+/* --- About Me --- */
 .sobre{
     padding: 6rem 2rem;
     }
@@ -126,4 +129,63 @@ body {
     padding: 2rem;
     margin: 0 auto;
     text-align: center;
+}
+
+/* --- Seção de Projetos --- */
+.projetos{
+    padding: 6rem 2rem;
+
+}
+
+.titulo-projetos{
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.caixa-projetos{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.proj1{
+    border-radius: 16px;
+    border: 1px solid var(--vidro);
+    backdrop-filter: blur(10px);
+    background: rgba(255, 255, 255, 0.2);
+    overflow: hidden;
+    transition: all 0.5s ease;
+    cursor: pointer;
+
+}
+.proj1:hover{
+    box-shadow: 0 10px 20px rgba(79, 70, 229, 0.2);
+    transform: translateY(-10px) scale(1.03)
+}
+
+.perfilpj{
+    height: 200px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.titulo-projeto{
+   text-align: center;
+   margin-bottom: 3px;
+
+
+}
+
+.desc{
+    margin: 0 auto;
+    text-align: justify;
+    text-align: center;
+    font-size: 0.95rem;
+}
+
+.caixa-textos{
+    padding: 1.5rem;
 }
