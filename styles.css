@@ -222,6 +222,23 @@ body {
     padding: 1rem;
     background: rgba(255, 255, 255, 0.1);
     border-radius: 8px;
-    border: 1px solid var(--vidro)
-    color: var(--claro)
+    border: 1px solid var(--vidro);
+    color: var(--claro);
+}
+
+.botao{
+    color: var(--claro);
+    background: linear-gradient(45deg, var(--primaria), var(--secundaria));
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    width: 100%;
+    transition: all 0.4 ease;
+
+}
+.botao:hover{
+    transform: translateY(-4px);
+    box-shadow: 0 5px 15px rgba(79, 70, 299, 0.3);
 }
