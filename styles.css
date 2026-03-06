@@ -202,31 +202,18 @@ body {
     margin-bottom: 20px;
 }
 
-.form-contato{
-    max-width: 600px;
+.contatos{
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    gap: 3rem;
+    flex-direction: column;
+}
+
+.botaolk{
     margin: 0 auto;
-    border-radius: 16px;
-    border: 1px solid var(--vidro);
-    padding: 2rem;
-    backdrop-filter: blur(10px);
-    background: rgba(255, 255, 255, 0.2);
-
-}
-
-.grupo-form{
-    margin-bottom: 1.5rem;
-}
-
-.campo-form{
-    width: 100%;
-    padding: 1rem;
-    background: rgba(255, 255, 255, 0.1);
-    border-radius: 8px;
-    border: 1px solid var(--vidro);
-    color: var(--claro);
-}
-
-.botao{
+    font-weight: bold;
+    font-size: 0.97rem;
     color: var(--claro);
     background: linear-gradient(45deg, var(--primaria), var(--secundaria));
     padding: 1rem 2rem;
@@ -234,10 +221,9 @@ body {
     border-radius: 8px;
     cursor: pointer;
     font-weight: bold;
-    width: 100%;
+    width: 15%;
     transition: all 0.4 ease;
-
-}
+    }
 .botao:hover{
     transform: translateY(-4px);
     box-shadow: 0 5px 15px rgba(79, 70, 299, 0.3);
